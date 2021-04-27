@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.12.1">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.TableRdv">
+            <fields>
+                <field type="STRING" length="255" name="prenomClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nomClient" nullable="false" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="dateRdvClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="courrielClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="numTelClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="codePostalClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="adresseClient" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="loginClient" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="motdepasseClient" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.TableService" fetchType="LAZY" name="rdvService" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.TableService">
+            <fields>
+                <field type="STRING" length="255" name="nomService" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="prixService" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="descriptionService" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
