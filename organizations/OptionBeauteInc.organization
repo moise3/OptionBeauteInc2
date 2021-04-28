@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="OptionBeauteInc">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="michelle">
+      <firstName>Michelle</firstName>
+      <lastName>Claude</lastName>
+      <title>Mlle</title>
+      <jobTitle>Manager</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="lauraine">
+      <firstName>Lauraine</firstName>
+      <lastName>Marcelle</lastName>
+      <title>Mme</title>
+      <jobTitle>Esthéticienne</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="gestionnaire">
+      <displayName>Gestionnaire du salon</displayName>
+    </role>
+    <role name="employe">
+      <displayName>Employe du salon</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="optionbeauteinc">
+      <displayName>OptionBeauteInc</displayName>
+    </group>
+    <group name="gestionnaire" parentPath="/optionbeauteinc">
+      <displayName>Gestionnaire</displayName>
+    </group>
+    <group name="estheticienne" parentPath="/optionbeauteinc">
+      <displayName>Estheticienne</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>michelle</userName>
+      <roleName>gestionnaire</roleName>
+      <groupName>gestionnaire</groupName>
+      <groupParentPath>/optionbeauteinc</groupParentPath>
+    </membership>
+    <membership>
+      <userName>lauraine</userName>
+      <roleName>employe</roleName>
+      <groupName>estheticienne</groupName>
+      <groupParentPath>/optionbeauteinc</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
