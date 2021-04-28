@@ -18,7 +18,7 @@
       <lastName>Marcelle</lastName>
       <title>Mme</title>
       <jobTitle>Esthéticienne</jobTitle>
-      <manager></manager>
+      <manager>michelle</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
